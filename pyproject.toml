@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "car-music"
+version = "0.1.0"
+description = "reduce folders with music up to 2 lvls and converts to mp3"
+authors = ["Shuraken007 <alexander.mad93@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "car_music.scripts.start:main"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "car_music"
+]

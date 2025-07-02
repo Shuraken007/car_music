@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+download/
+converted/
+tmp/
+config.ini
