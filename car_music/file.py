@@ -3,7 +3,6 @@ import re
 from functools import total_ordering
 from shutil import copyfile
 import config
-from pydub import AudioSegment
 
 class Updatable:
    def __init__(self, val):
@@ -112,5 +111,5 @@ class FileConvertor:
       if self.file.ext == self.ext:
          copyfile(old_path, new_path)
       else:
-         flac_audio = AudioSegment.from_file(old_path, self.file.ext[1:])
+         flac_audio = config.AUDIO_SEGMENT.from_file(old_path, self.file.ext[1:])
          flac_audio.export(new_path, format="mp3")
