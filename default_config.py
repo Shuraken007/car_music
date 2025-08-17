@@ -1,6 +1,7 @@
 from pydub import AudioSegment
 AudioSegment.converter = "/usr/bin/ffmpeg"
 AudioSegment.ffmpeg = "/usr/bin/ffmpeg"
+AudioSegment.ffprobe ="/usr/bin/ffprobe"
 AUDIO_SEGMENT = AudioSegment
 
 DOWNLOAD_PATH = "./download"
