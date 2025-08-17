@@ -1,6 +1,8 @@
 __pycache__/
 *.pyc
 download/
-converted/
+convert/
 tmp/
-config.ini
+poetry.lock
+.vscode/
+config.py

@@ -1,5 +1,8 @@
+from ..scan import Scan
+
 def main():
-   print('here')
+   scan = Scan()
+   scan.run()
 
 if __name__ == '__main__':
    main()

@@ -5,10 +5,13 @@ description = "reduce folders with music up to 2 lvls and converts to mp3"
 authors = ["Shuraken007 <alexander.mad93@gmail.com>"]
 readme = "README.md"
 
+
 [tool.poetry.dependencies]
 python = "^3.10"
 
 
+unidecode = "^1.4.0"
+pydub = "^0.25.1"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
